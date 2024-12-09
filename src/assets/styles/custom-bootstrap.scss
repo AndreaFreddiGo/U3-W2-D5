@@ -1,0 +1,23 @@
+// // creo un file .scss im cui poter "customizzare" un po' Bootstrap; nel mio caso vorrei creare un colore più scuro
+// dato che il "dark" di default di Bootstrap è più chiaro del grigio usato per Netflix (che non è neppure nero)
+// per farlo devo andare ad aggiungere un colore ai colori già definiti nel partial "_variables.scss"
+// questo partial contiene però dei riferimenti presenti in "_functions.scss", quindi quest'ultimo andrà importato per primo
+// importo "functions.scss"
+@import './scss/functions';
+// importo "_variables.scss"
+@import './scss/variables';
+
+// ho accesso alle definizioni dei colori di bootstrap e alla varibile "$theme-colors" che li raggruppa
+
+// creo il mio nuovo colore
+$orange: #fe8f01;
+
+// inserisco in una nostra versione di "$theme-coslors"
+$new-theme-colors: (
+  'orange': $orange,
+);
+// sovrappongo $new-theme-colors sull'originale $theme-colors dove andrà ad aggiungersi anche il mio colore $darkest
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+// importo il bootstrap.scss originale nel quale sarà presente anche il nuovo colore che serve a me
+@import './scss/bootstrap.scss';
