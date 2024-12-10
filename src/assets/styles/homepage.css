@@ -1,4 +1,25 @@
 main {
   background-image: url("../images/day.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.weatherCard {
+  background-color: hsla(220, 5%, 89%, 0.8);
+}
+
+.cityWindow {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#weatherIcon {
+  background-color: #0dcaf0;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  font-size: 100px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=homepage.css.map */
