@@ -22,7 +22,7 @@ const UNavbar = ({ setCoordinates }) => {
   }
 
   return (
-    <Navbar className="justify-content-between px-1 px-md-3 py-3 bg-secondary-subtle shadow-lg">
+    <Navbar className="change navbar justify-content-between px-1 px-md-3 py-3  shadow-lg">
       <Navbar.Brand href="#home" className="text-info ps-2 fs-4 fw-semibold">
         umbrellApp
       </Navbar.Brand>
@@ -32,7 +32,7 @@ const UNavbar = ({ setCoordinates }) => {
             <Form.Control
               type="text"
               placeholder="You need me in your city?"
-              className="py-2 border-info border-2 m-0 bg-transparent"
+              className=" py-2 border-info border-2 m-0 bg-transparent"
               variant="info"
               value={city}
               onChange={(e) => setCity(e.target.value)}

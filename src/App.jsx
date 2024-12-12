@@ -23,7 +23,7 @@ function App() {
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
     >
       <UNavbar setCoordinates={setCoordinates} />
-      <main style={{ flex: 1 }}>
+      <main className="change" style={{ flex: 1 }}>
         <UWeather latitude={coordinates.lat} longitude={coordinates.lon} />
       </main>
       <UFooter />

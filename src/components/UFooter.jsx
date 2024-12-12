@@ -1,7 +1,7 @@
 import Logo from '../assets/images/Logo.png'
 
 const UFooter = () => (
-  <footer className="d-flex bg-secondary-subtle py-2 shadow-lg ">
+  <footer className="change footer d-flex  py-2 shadow-lg ">
     <span className="text-info m-auto p-2 fs-6">
       <p className="mb-0">
         {' '}
